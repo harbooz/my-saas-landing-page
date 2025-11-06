@@ -19,7 +19,7 @@ A modern, responsive **SaaS / AI tool landing page template** built with **React
 
 ## Demo
 
-> Add your live demo link here (e.g., Vercel, Netlify)
+> live demo: https://my-saas-landing-page-ai.netlify.app/#contact
 
 ![Landing Page Screenshot](screenshot.png)  
 
