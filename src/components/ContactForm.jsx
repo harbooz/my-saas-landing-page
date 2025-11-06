@@ -22,41 +22,21 @@ export default function ContactForm() {
         {submitted && (
           <p className="mb-4 text-green-500 text-center">Thanks! We'll get back to you soon.</p>
         )}
-        <form onSubmit={handleSubmit} className="space-y-4">
-          <input
-            type="text"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            placeholder="Your Name"
-            required
-            className="w-full px-4 py-2 rounded bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
-          <input
-            type="email"
-            name="email"
-            value={formData.email}
-            onChange={handleChange}
-            placeholder="Your Email"
-            required
-            className="w-full px-4 py-2 rounded bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            placeholder="Your Message"
-            rows={4}
-            required
-            className="w-full px-4 py-2 rounded bg-white border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"
-          />
-          <button
-            type="submit"
-            className="w-full bg-indigo-600 text-white rounded py-2 font-semibold hover:bg-indigo-700 transition"
-          >
-            Send Message
-          </button>
-        </form>
+        <form
+     action="https://formspree.io/f/meopyrbr"
+      method="POST"
+      className="flex flex-col space-y-4 max-w-md mx-auto"
+    >
+      <input type="text" name="name" placeholder="Your Name" required
+        className="p-2 border rounded" />
+      <input type="email" name="_replyto" placeholder="Your Email" required
+        className="p-2 border rounded" />
+      <textarea name="message" placeholder="Your Message" required
+        className="p-2 border rounded"></textarea>
+      <button type="submit" className="bg-indigo-600 text-white px-4 py-2 rounded">
+        Send Message
+      </button>
+    </form>
       </div>
     </section>
   );

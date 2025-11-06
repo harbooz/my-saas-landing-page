@@ -1,39 +1,24 @@
-# AIboost Landing Page – React + Vite + TailwindCSS
+# AIboost – React + Vite + Tailwind Landing Page Template
 
-A modern, responsive **SaaS / AI tool landing page template** built with **React, Vite, and TailwindCSS**. Perfect for startups, AI tools, or SaaS products. Ready to customize and deploy.
-
----
+A modern, responsive **SaaS / AI tool landing page template** built with **React, Vite, and TailwindCSS**. Ready to customize and deploy.
 
 ## Features
 
+- Hero, Features, Pricing & Contact sections
 - Fully responsive, mobile-first design
-- Hero section with CTA
-- Features & Pricing sections
-- Contact form with form state handling
-- Built with **TailwindCSS** for easy customization
-- Light-mode design (dark mode can be added)
-- Ready to deploy with Vite
-- Easy to extend or integrate with backend APIs
+- TailwindCSS for easy customization
+- Light-mode ready
+- Netlify-ready for static deployment
+- Formspree preconfigured contact form
 
----
+## Live Demo
 
-## Demo
-
-> live demo: https://my-saas-landing-page-ai.netlify.app/#contact
-
-![Landing Page Screenshot](screenshot.png)  
-
----
+[https://my-saas-landing-page-ai.netlify.app/]
 
 ## Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/your-username/aiboost-landing.git
 cd aiboost-landing
-
-# Install dependencies
 npm install
-
-# Start development server
 npm run dev
